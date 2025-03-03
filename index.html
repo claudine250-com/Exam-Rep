@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RP Ngoma College</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        nav {
+            background-color: black;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-size: 18px;
+        }
+        .gallery img {
+            width: 200px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Gallery</a>
+        <a href="#">About Us</a>
+    </nav>
+
+    <h1>Welcome to RP Ngoma College</h1>
+    <p>Providing quality education and skills for the future.</p>
+
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="{{ C:\Users\use\Desktop\New folder\Exam-Rep('static', filename='image 1.jpg') }}" alt="College Image 1">
+        <img src="{{ url_for('static', filename='image2.jpg') }}" alt="College Image 2">
+        <img src="{{ url_for('static', filename='image3.jpg') }}" alt="College Image 3">
+    </div>
+
+</body>
+</html>
